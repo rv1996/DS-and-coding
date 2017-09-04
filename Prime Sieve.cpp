@@ -2,6 +2,7 @@
 #include <string.h>
 using namespace std;
 
+// Helper function for printing the array
 void print(bool a[],int n,int s){
     for(int i=s;i<n;i++)
     {
@@ -12,7 +13,7 @@ void print(bool a[],int n,int s){
 
     cout<<endl;
 }
-
+// main driver program
 int main() {
 	// your code goes here
 	int T;
@@ -27,6 +28,7 @@ int main() {
 	memset(arr,true,sizeof(arr));
 	arr[0] = false;
 	arr[1] = false;
+	// code for generating prime number from a give p to q series
 	for(int i=2;i<q;i++)
 	{   
 	    int x = i+i;
